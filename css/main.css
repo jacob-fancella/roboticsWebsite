@@ -1,6 +1,7 @@
 /*MAIN CSS FOR ROBOTICS SITE*/
 #html{
-     
+  font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+            font-size: 14px;   
     
 }
 #wrapper{
@@ -10,7 +11,7 @@
 }
 
 #leftSideBar{
-    width: 175px;
+    width: 25%;
     float: left
 }
 
@@ -25,7 +26,6 @@
 }
 .button{
     border: none;
-    cursor: url(images/cursor.png);
 }
 a.button {
     -webkit-appearance: button;
@@ -39,6 +39,7 @@ a.button {
     background-color: white;
     color: black;
     border: 1px solid white;
+    text-decoration: none;
 }
 
 a.button:hover{
@@ -50,13 +51,13 @@ a.button:hover{
     display: inline-block;
     position: absolute;
     margin-left: 10px;
-    width: 75%;
+    width: 95%;
     float: right;
     
 }
 
 #mainContent img{
-    width: 100%;
+    width: 75%;
     
 }
 

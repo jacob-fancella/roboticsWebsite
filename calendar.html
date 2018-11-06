@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Armstong Robotics Club
+    </title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset='utf-8' />
+    <link href='../fullcalendar.min.css' rel='stylesheet' />
+    <link href='../fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <script src='../lib/moment.min.js'></script>
+    <script src='../lib/jquery.min.js'></script>
+    <script src='../fullcalendar.min.js'></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,basicWeek,basicDay'
+                },
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: [{
+                        title: 'Meeting',
+                        start: '2018-11-09'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2018-11-23',
+                    }
+                ]
+            });
+
+        });
+    </script>
+    <style>
+        #calendar {
+            max-width: 600px;
+            margin-top: -400px;
+            margin-left: 185px;
+            float: left;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Armstrong</h1>
+            <h1>Robotics</h1>
+            <h1>Club</h1>
+        </div>
+
+        <div id="navMenu">
+            <ul>
+                <li><a href="index.html" class="button">Home</a></li>
+                <li><a href="http://google.com" class="button">About Us</a></li>
+                <li><a href="calendar.html" class="button">Calendar</a></li>
+            </ul>
+        </div>
+
+        <div id="mainContent">
+            <div id='calendar'></div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
